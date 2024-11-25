@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviço de Pintura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <style>
+    /* Estilo geral para o tema escuro */
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    /* Estilo dos cards para mantê-los do mesmo tamanho */
+    .card {
+      height: 100%;
+      background-color: #1f1f1f;
+      color: #ffffff;
+    }
+    /* Navbar com tema escuro */
+    .navbar {
+      background-color: #333;
+    }
+    /* Estilo dos ícones do footer */
+    .social-icons a {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #00aced; /* Altere para a cor desejada */
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./imagem/pintura2.jpg" alt="Logo" width="50"> <!-- Logo -->
+      Serviço de Pintura
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1>Serviços Profissionais de Pintura</h1>
+    <p class="lead">Transforme seus ambientes com qualidade e confiança</p>
+  </div>
+</section>
+
+<!-- Cards de Serviços -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nossos Serviços</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagem/pintura.jpg" class="card-img-top" alt="Serviço 1">
+          <div class="card-body">
+            <h5 class="card-title">Pintura Residencial</h5>
+            <p class="card-text">Serviço completo para residências com acabamento profissional.</p>
+            <p class="fw-bold">Preço: R$ 500,00</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagem/sala.jpeg" class="card-img-top" alt="Serviço 2">
+          <div class="card-body">
+            <h5 class="card-title">Pintura Comercial</h5>
+            <p class="card-text">Pintura de alta qualidade para ambientes comerciais.</p>
+            <p class="fw-bold">Preço: R$ 1.200,00</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="./imagem/p10.jpg" class="card-img-top" alt="Serviço 3">
+          <div class="card-body">
+            <h5 class="card-title">Decoração e Textura</h5>
+            <p class="card-text">Acabamentos decorativos para um toque especial em qualquer espaço.</p>
+            <p class="fw-bold">Preço: R$ 800,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container text-center">
+    <div class="row">
+      <!-- Sobre nós -->
+      <div class="col-md-4 mb-3">
+        <h5>Sobre Nós</h5>
+        <p>Especialistas em serviços de pintura de alta qualidade, transformando espaços com criatividade e precisão.</p>
+      </div>
+      <!-- Redes Sociais -->
+      <div class="col-md-4 mb-3">
+        <h5>Siga-nos</h5>
+        <div class="social-icons">
+          <a href="https://wa.me/SEU_NUMERO" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://instagram.com/SEU_INSTAGRAM" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://facebook.com/SEU_FACEBOOK" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://linkedin.com/in/SEU_LINKEDIN" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Horários de Funcionamento -->
+      <div class="col-md-4 mb-3">
+        <h5>Horário de Funcionamento</h5>
+        <p>Seg - Sex: 8h - 18h</p>
+        <p>Sáb: 9h - 13h</p>
+        <p>Dom: Fechado</p>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2024 Pintura Profissional. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
